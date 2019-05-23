@@ -17,36 +17,48 @@
 
 <body>
 <!-- Header -->
-<header id="header">
+<header>
 	<nav>
 		<img src="img/avatar.jpg" class="avatar" alt="Moi">
-		<ul class="icons">
+		<ul class="nav-selec">
 			<li>
-				<a href="https://twitter.com/Matthiasgeslin" class="" target="_blank">
+				<input type="radio" class="home-push" id="home" name="home" checked>
+				<label for="home" class="">Accueil</label>
+			</li>
+
+			<li>
+				<input type="radio" class="portfolio-push" id="portfolio" name="home">
+				<label for="portfolio" class="">Portfolio</label>
+			</li>
+		</ul>
+
+		<ul class="social">
+			<li>
+				<a href="https://twitter.com/Matthiasgeslin" class="" target="_blank" title="Twitter">
 					<i class="fab fa-twitter"></i>
 				</a>
 			</li>
 
 			<li>
-				<a href="https://www.facebook.com/matthias.geslin" class="" target="_blank">
+				<a href="https://www.facebook.com/matthias.geslin" class="" target="_blank" title="Facebook">
 					<i class="fab fa-facebook-f"></i>
 				</a>
 			</li>
 
 			<li>
-				<a href="https://github.com/Matthias-Geslin" class="" target="_blank">
+				<a href="https://github.com/Matthias-Geslin" class="" target="_blank" title="Github">
 					<i class="fab fa-github-alt"></i>
 				</a>
 			</li>
 
 			<li>
-				<a href="https://www.linkedin.com/in/matthias-geslin/" class="" target="_blank">
+				<a href="https://www.linkedin.com/in/matthias-geslin/" class="" target="_blank" title="Linkedin">
 					<i class="fab fa-linkedin-in"></i>
 				</a>
 			</li>
 
 			<li>
-				<a href="mailto:m.geslin974@gmail.com" class="" target="_blank">
+				<a href="mailto:m.geslin974@gmail.com" class="" target="_blank" title="Contact">
 					<i class="far fa-envelope"></i>
 				</a>
 			</li>
@@ -58,26 +70,38 @@
 </header>
 
 <!-- Main -->
-<section id="main">
+<section>
 	<h1>Welcome to my place, I'm a Web developper junior to become.</h1>
-	<!-- Thumbnails -->
-	<section class="thumbnails">
-		<a href="http://webagency.matthias-geslin.fr/">
-			<img src="" alt="">
-			<h3>Webagency - Projet 1</h3>
-		</a>
+	<div class="portfolio-box">
+		<figure>
+			<img src="img/thumbs/webagency.png" alt="Screenshot du premier projet">
+			<figcaption>
+				<a href="http://webagency.matthias-geslin.fr/">
+					<h3>Webagency - Projet 1</h3>
+				</a>
+			</figcaption>
+		</figure>
 
-		<a href="https://wordpress.matthias-geslin.fr/">
-			<img src="" alt="" >
-			<h3>Wordpress - Projet 2</h3>
-		</a>
+		<figure>
+			<img src="img/thumbs/wordpress.png" alt="Screenshot du deuxième projet">
+			<figcaption>
+				<a href="https://wordpress.matthias-geslin.fr/">
+					<h3>Wordpress - Projet 2</h3>
+				</a>
+			</figcaption>
+		</figure>
 
-		<a href="https://javascript.matthias-geslin.fr/">
-			<img src="" alt="">
-			<h3>Javascript - Projet 3</h3>
-		</a>
-	</section>
+		<figure>
+			<img src="img/thumbs/06.jpg" alt="Image pour le 3eme projet">
+			<figcaption>
+				<a href="https://javascript.matthias-geslin.fr/">
+					<h3>Javascript - Projet 3</h3>
+				</a>
+			</figcaption>
+		</figure>
+	</div>
 </section>
+
 
 
 <!-- Footer -->
