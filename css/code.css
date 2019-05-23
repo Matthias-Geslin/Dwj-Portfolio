@@ -1,5 +1,12 @@
+@font-face {
+    font-family: "Aluria";
+    src: url("../fonts/Aluria.ttf") format("truetype"),
+        url("../fonts/Aluria.otf") format("opentype");
+}
+
 body {
     margin: 0;
+    /*background-color: lightslategrey;*/
 }
 
 header {
@@ -22,6 +29,7 @@ nav {
     align-items: center;
     justify-content: space-between;
 
+    font-family: "Aluria", "SansSerif", "sans-serif";
     padding: 10px;
 }
 
@@ -40,12 +48,14 @@ li {
     margin: 10px;
 }
 
+/* nav radio inputs */
 .home-push,
 .portfolio-push {
     display: none;
 }
 .nav-selec label:hover{
     cursor: pointer;
+    color: red;
 }
 
 nav a:visited, nav a:link{
@@ -53,12 +63,12 @@ nav a:visited, nav a:link{
 }
 
 nav a:hover {
-    color: red;
+
     text-decoration: none;
 }
 
 a:link:hover {
-    color: red;
+
 }
 
 a:visited {
@@ -70,13 +80,64 @@ a:link {
     color: black;
     text-decoration: none;
 }
+/****************/
+/* Social links */
+
+/* twitter */
+.fa-twitter,
+.fa-facebook-f,
+.fa-github-alt,
+.fa-linkedin-in,
+.fa-envelope
+{
+    padding: 15px;
+    border:1px solid white;
+    border-radius: 50%;
+}
+
+.fa-twitter:hover {
+    color: #0096fa;
+    background-color: white;
+}
+
+/* facebook */
+.fa-facebook-f{
+
+}
+.fa-facebook-f:hover {
+    color: #326496;
+}
+
+/* github */
+.fa-github-alt{
+
+}
+.fa-github-alt:hover {
+    color: #323232;
+}
+
+/* linkedin */
+.fa-linkedin-in{
+
+}
+.fa-linkedin-in:hover {
+    color: #0077B5;
+}
+
+/* mail */
+.fa-envelope{
+
+}
+.fa-envelope:hover {
+    color: limegreen;
+}
 
 
-
+/********/
+/* Main */
 h1{
     text-align: center;
 }
-
 
 .portfolio-box{
     display: flex;
@@ -86,7 +147,8 @@ h1{
 }
 
 figure {
-    border: 1px solid grey;
+    border: 3px solid grey;
+    border-radius: 5px;
     padding: 10px;
 }
 figcaption{
@@ -96,3 +158,9 @@ figure img{
     width: 250px;
 }
 
+
+/*//////////////*/
+/* media screen */
+@media screen and (min-width: 479px) {}
+@media screen and (min-width: 959px) {}
+@media screen and (min-width: 1280px) {}
