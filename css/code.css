@@ -14,8 +14,13 @@ header {
     color: rgba(255, 255, 255, 0.65);
 }
 
+header a{
+    line-height: 0;
+}
+
 .avatar{
     height: 100px;
+    align-self: center;
 }
 
 nav {
@@ -25,12 +30,13 @@ nav {
 
     display: flex;
     width: 100%;
+    height: 100%;
 
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
 
     font-family: "Aluria", "SansSerif", "sans-serif";
-    padding: 10px;
 }
 
 
@@ -44,7 +50,6 @@ ul {
 }
 
 li {
-    padding: 0 10px 0 10px;
     margin: 10px;
 }
 
@@ -63,7 +68,6 @@ nav a:visited, nav a:link{
 }
 
 nav a:hover {
-
     text-decoration: none;
 }
 
@@ -82,7 +86,9 @@ a:link {
 }
 /****************/
 /* Social links */
+.social{
 
+}
 /* twitter */
 .fa-twitter,
 .fa-facebook-f,
@@ -91,44 +97,35 @@ a:link {
 .fa-envelope
 {
     padding: 15px;
-    border:1px solid white;
+
+    border: 3px solid grey;
     border-radius: 50%;
+
+    background-color: white;
+    font-size: 15px;
 }
 
-.fa-twitter:hover {
+.fa-twitter{
     color: #0096fa;
-    background-color: white;
 }
 
 /* facebook */
-.fa-facebook-f{
-
-}
-.fa-facebook-f:hover {
+.fa-facebook-f {
     color: #326496;
 }
 
 /* github */
-.fa-github-alt{
-
-}
-.fa-github-alt:hover {
+.fa-github-alt {
     color: #323232;
 }
 
 /* linkedin */
-.fa-linkedin-in{
-
-}
-.fa-linkedin-in:hover {
+.fa-linkedin-in {
     color: #0077B5;
 }
 
 /* mail */
-.fa-envelope{
-
-}
-.fa-envelope:hover {
+.fa-envelope {
     color: limegreen;
 }
 
@@ -137,11 +134,12 @@ a:link {
 /* Main */
 h1{
     text-align: center;
+    font-size: 1.5em;
 }
 
 .portfolio-box{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -159,8 +157,14 @@ figure img{
 }
 
 
-/*//////////////*/
-/* media screen */
-@media screen and (min-width: 479px) {}
+/*/////////////////////*/
+/* media screen mobile */
+@media screen and (min-width: 479px) {
+    .portfolio-box{
+        flex-direction: row;
+    }
+}
+/* media screen tablet */
 @media screen and (min-width: 959px) {}
+/* media screen desktop */
 @media screen and (min-width: 1280px) {}
