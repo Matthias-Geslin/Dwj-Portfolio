@@ -162,9 +162,15 @@ figure img{
 @media screen and (min-width: 479px) {
     .portfolio-box{
         flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 /* media screen tablet */
-@media screen and (min-width: 959px) {}
+@media screen and (min-width: 959px) {
+    nav {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
 /* media screen desktop */
 @media screen and (min-width: 1280px) {}
