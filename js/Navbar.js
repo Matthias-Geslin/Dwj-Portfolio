@@ -14,15 +14,15 @@ NavBar.prototype.navSelector = function () {
     const portfolioSelector = document.getElementById("portfolio");
     const portfolioBoxSelector = document.getElementById("portfolio-box");
 
-    const contactSelector = document.getElementById("contact");
-    const contactBoxSelector = document.getElementById("contact-box");
+    const aboutSelector = document.getElementById("about");
+    const aboutBoxSelector = document.getElementById("about-box");
 
 
     this.homeInSelector = function () {
         homeSelector.addEventListener('click', function (e) {
             homeBoxSelector.classList.remove('disabled');
             portfolioBoxSelector.classList.add('disabled');
-            contactBoxSelector.classList.add('disabled');
+            aboutBoxSelector.classList.add('disabled');
         });
     };
 
@@ -30,15 +30,15 @@ NavBar.prototype.navSelector = function () {
         portfolioSelector.addEventListener('click', function () {
             homeBoxSelector.classList.add('disabled');
             portfolioBoxSelector.classList.remove('disabled');
-            contactBoxSelector.classList.add('disabled');
+            aboutBoxSelector.classList.add('disabled');
         });
     };
 
     this.contactInSelector = function () {
-        contactSelector.addEventListener('click', function () {
+        aboutSelector.addEventListener('click', function () {
             homeBoxSelector.classList.add('disabled');
             portfolioBoxSelector.classList.add('disabled');
-            contactBoxSelector.classList.remove('disabled');
+            aboutBoxSelector.classList.remove('disabled');
         });
     };
 };
