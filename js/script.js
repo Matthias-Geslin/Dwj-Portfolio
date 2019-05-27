@@ -5,5 +5,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
     var slider = new Slider();
     slider.moveInSlide();
 
-    var navbar = new Navbar();
+    var navBar = new NavBar();
+    navBar.navSelector();
 });
