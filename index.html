@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<title>DWJ - Matthias Geslin</title>
 
@@ -23,12 +23,17 @@
 		<ul class="nav-selec">
 			<li>
 				<input type="radio" class="home-push" id="home" name="home" checked>
-				<label for="home" class="">Accueil</label>
+				<label for="home">Accueil</label>
 			</li>
 
 			<li>
 				<input type="radio" class="portfolio-push" id="portfolio" name="home">
-				<label for="portfolio" class="">Portfolio</label>
+				<label for="portfolio">Portfolio</label>
+			</li>
+
+			<li>
+				<input type="radio" class="contact-push" id="contact" name="home">
+				<label for="contact">Contact</label>
 			</li>
 		</ul>
 
@@ -64,16 +69,13 @@
 			</li>
 		</ul>
 	</nav>
-
-
-
 </header>
 
 <!-- Main -->
 <section>
 	<h1>Welcome to my place, I'm a Web developper junior to become.</h1>
 	<div class="portfolio-box">
-		<figure>
+		<figure class="picture fade">
 			<img src="img/thumbs/webagency.png" alt="Screenshot du premier projet">
 			<figcaption>
 				<a href="http://webagency.matthias-geslin.fr/">
@@ -82,7 +84,7 @@
 			</figcaption>
 		</figure>
 
-		<figure>
+		<figure class="picture fade">
 			<img src="img/thumbs/wordpress.png" alt="Screenshot du deuxième projet">
 			<figcaption>
 				<a href="https://wordpress.matthias-geslin.fr/">
@@ -91,7 +93,7 @@
 			</figcaption>
 		</figure>
 
-		<figure>
+		<figure class="picture fade">
 			<img src="img/thumbs/06.jpg" alt="Image pour le 3eme projet">
 			<figcaption>
 				<a href="https://javascript.matthias-geslin.fr/">
@@ -99,10 +101,51 @@
 				</a>
 			</figcaption>
 		</figure>
+
+		<div class="controls">
+			<input type="button"  id="previous" class="disabled">
+			<label for="previous"  class="prev" onclick="Slider.prototype.moveInSlide(slideIndex -=1)">
+				<img src="img/svg/hand-point-left.svg" class="prev-mvt" alt="Svg image">
+			</label>
+
+			<input type="button" id="play-btn" class="disabled">
+			<label for="play-btn" id="play" class="play">
+				<img src="img/svg/play.svg" class="play-mvt" alt="Svg image">
+			</label>
+
+			<input type="button" id="pause-btn" class="disabled">
+			<label for="pause-btn" id="pause" class="pause disabled">
+				<img src="img/svg/pause-circle.svg" class="pause-mvt" alt="Svg image">
+			</label>
+
+			<input type="button" id="next" class="disabled">
+			<label for="next" class="next" onclick="Slider.prototype.moveInSlide(slideIndex +=1)">
+				<img src="img/svg/hand-point-right.svg" class="next-mvt" alt="Svg image">
+			</label>
+		</div>
 	</div>
 
-	<div class="home-info">
 
+
+	<div class="home-box">
+	</div>
+
+	<div class="contact-box">
+		<form>
+			<div>
+				<input id="firstName" type="text" placeholder="Prénom">
+				<label for="firstName">Username</label>
+			</div>
+
+			<div>
+				<input id="lastName" type="text" placeholder="Nom">
+				<label for="lastName">Password</label>
+			</div>
+
+			<div>
+				<button class="" type="button">Envoyer</button>
+			</div>
+		</form>
 	</div>
 </section>
 
@@ -111,5 +154,10 @@
 <!-- Footer -->
 <footer id="footer">
 </footer>
+
+<script src="js/ajax.js"></script>
+<script src="js/Slider.js"></script>
+<script src="js/Navbar.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

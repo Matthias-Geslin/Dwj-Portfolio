@@ -1,7 +1,18 @@
 @font-face {
     font-family: "Aluria";
     src: url("../fonts/Aluria.ttf") format("truetype"),
-        url("../fonts/Aluria.otf") format("opentype");
+    url("../fonts/Aluria.otf") format("opentype");
+}
+
+/* Keyframes */
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 body {
@@ -54,8 +65,7 @@ li {
 }
 
 /* nav radio inputs */
-.home-push,
-.portfolio-push {
+nav input{
     display: none;
 }
 .nav-selec label:hover{
@@ -86,17 +96,17 @@ a:link {
 }
 /****************/
 /* Social links */
-.social{
+.social{}
 
-}
-/* twitter */
+/*/////////////*/
+/* fontawesome */
 .fa-twitter,
 .fa-facebook-f,
 .fa-github-alt,
 .fa-linkedin-in,
 .fa-envelope
 {
-    padding: 15px;
+    padding: 10px;
 
     border: 3px solid grey;
     border-radius: 50%;
@@ -137,11 +147,17 @@ h1{
     font-size: 1.5em;
 }
 
+/*~~~~~~~~~~~~~~~~~~*/
+/* Portfolio slider */
 .portfolio-box{
     display: flex;
+    margin: auto;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+}
+
+.picture {
+    display: none;
 }
 
 figure {
@@ -156,13 +172,76 @@ figure img{
     width: 250px;
 }
 
+/* Fading animation */
+.fade {
+    -webkit-animation: fade 1.5s;
+    animation: fade 1.5s;
+}
+
+
+/*~~~~~~~~~~*/
+/* Controls */
+.controls {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* fa- hand next/previous  */
+.prev,
+.next,
+.pause,
+.play {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    transition: 0.6s ease;
+    border-radius: 10px;
+    user-select: none;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover,
+.pause:hover,
+.play:hover
+{
+    background-color: rgba(0,0,0,0.4);
+}
+
+.prev-mvt,
+.next-mvt,
+.pause-mvt,
+.play-mvt {
+    width: 40px;
+}
+
+
+/*~~~~~~~~~~~~~*/
+/* contact box */
+.contact-box{
+    display: flex;
+    justify-content: center;
+    margin:auto;
+}
+div{}
+input{}
+label{}
+
+
+
+
+/*~~~~~~~~~*/
+/* helpers */
+.disabled{
+    display: none;
+}
 
 /*/////////////////////*/
 /* media screen mobile */
 @media screen and (min-width: 479px) {
-    .portfolio-box{
-        flex-direction: row;
-        flex-wrap: wrap;
+    .far, .fab{
+        padding: 15px;
     }
 }
 /* media screen tablet */
