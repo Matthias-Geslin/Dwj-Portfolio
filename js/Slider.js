@@ -62,8 +62,8 @@ Slider.prototype.playPauseSlide = function () {
     this.playSlide = function () {
         playInSlide.addEventListener('click', function () {
             time = window.setInterval(autoInSlide, 3000);
-            pauseInSlide.classList.remove('hide');
-            playInSlide.classList.add('hide');
+            pauseInSlide.classList.remove('disabled');
+            playInSlide.classList.add('disabled');
         });
     };
 
@@ -75,7 +75,7 @@ Slider.prototype.playPauseSlide = function () {
     this.pauseSlide = function () {
         pauseInSlide.addEventListener('click', function () {
             window.clearInterval(time);
-            pauseInSlide.classList.add('hide');
-            playInSlide.classList.remove('hide');
+            pauseInSlide.classList.add('disabled');
+            playInSlide.classList.remove('disabled');
         })};
 };
