@@ -23,7 +23,7 @@
 		<ul class="nav-selec">
 			<li>
 				<input type="radio" class="home-push" id="home" name="home" checked>
-				<label for="home">Accueil</label>
+				<label for="home">Home</label>
 			</li>
 
 			<li>
@@ -32,40 +32,8 @@
 			</li>
 
 			<li>
-				<input type="radio" class="contact-push" id="contact" name="home">
-				<label for="contact">Contact</label>
-			</li>
-		</ul>
-
-		<ul class="social">
-			<li>
-				<a href="https://twitter.com/Matthiasgeslin" target="_blank" title="Twitter">
-					<i class="fab fa-twitter"></i>
-				</a>
-			</li>
-
-			<li>
-				<a href="https://www.facebook.com/matthias.geslin" target="_blank" title="Facebook">
-					<i class="fab fa-facebook-f"></i>
-				</a>
-			</li>
-
-			<li>
-				<a href="https://github.com/Matthias-Geslin" target="_blank" title="Github">
-					<i class="fab fa-github-alt"></i>
-				</a>
-			</li>
-
-			<li>
-				<a href="https://www.linkedin.com/in/matthias-geslin/" target="_blank" title="Linkedin">
-					<i class="fab fa-linkedin-in"></i>
-				</a>
-			</li>
-
-			<li>
-				<a href="mailto:m.geslin974@gmail.com" target="_blank" title="Contact">
-					<i class="far fa-envelope"></i>
-				</a>
+				<input type="radio" class="contact-push" id="about" name="home">
+				<label for="about">About me</label>
 			</li>
 		</ul>
 	</nav>
@@ -73,9 +41,8 @@
 
 <!-- Main -->
 <section>
-	<h1>Welcome to my place, I'm a Web developper junior to become.</h1>
 	<div id="home-box" class="home-box disabled">
-		<h1>Hello</h1>
+		<h1>Welcome to my place, I'm a Web developper junior to become.</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 			Quid ergo? Sic enim censent, oportunitatis esse beate vivere.
 			Hic nihil fuit, quod quaereremus. Torquatus, is qui consul cum Cn.
@@ -86,6 +53,12 @@
 			Quid me istud rogas? Hoc non est positum in nostra actione.
 			Nescio quo modo praetervolavit oratio.
 		</p>
+		<ul>
+			<li><i class="fab fa-html5"></i></li>
+			<li><i class="fab fa-css3-alt"></i></li>
+			<li><i class="fab fa-js-square"></i></li>
+		</ul>
+		<img src="img/Web%20Design_528px.png" alt="">
 	</div>
 
 	<div id="portfolio-box" class="portfolio-box disabled">
@@ -139,22 +112,52 @@
 		</div>
 	</div>
 
-	<div id="contact-box" class="contact-box disabled">
-		<form>
-			<div>
-				<input id="firstName" type="text" placeholder="Prénom">
-				<label for="firstName">Username</label>
-			</div>
+	<div id="about-box" class="about-box disabled">
+		<ul>
+			<li>
+				<figure>
+					<img src="img/Web_Design_500px.png" alt="">
+					<figcaption><p>Self taught developer with Openclassrooms training</p></figcaption>
+				</figure>
+			</li>
 
-			<div>
-				<input id="lastName" type="text" placeholder="Nom">
-				<label for="lastName">Password</label>
-			</div>
+			<li>
+				<section>
+					<h1>Places rich of knowledge:</h1>
+					<ul>
+						<li>
 
-			<div>
-				<button class="" type="button">Envoyer</button>
-			</div>
-		</form>
+							<a href="https://animadio.org/"><img src="https://animadio.org/img/slider/logo.png" alt="">Animadio</a>
+						</li>
+						<li>
+
+							<a href="https://developer.mozilla.org/fr/"><img src="img/mdn.png" alt="">Mdn</a>
+						</li>
+						<li>
+							<a href="https://codepen.io/"><i class="fab fa-codepen"></i>Codepen</a>
+						</li>
+					</ul>
+				</section>
+			</li>
+			<li>
+				<section>
+					<h1>About my code online:</h1>
+					<ul>
+						<li>
+							<a href="https://github.com/Matthias-Geslin/Dwj-Portfolio">
+								To Github:<i class="fab fa-github"></i>
+							</a>
+						</li>
+
+						<li>
+							<a href="https://codepen.io/matthias-geslin/">
+								To Codepen:<i class="fab fa-codepen"></i>
+							</a>
+						</li>
+					</ul>
+				</section>
+			</li>
+		</ul>
 	</div>
 </section>
 
@@ -162,6 +165,37 @@
 
 <!-- Footer -->
 <footer id="footer">
+	<ul class="social">
+		<li>
+			<a href="https://twitter.com/Matthiasgeslin" target="_blank" title="Twitter">
+				<i class="fab fa-twitter"></i>
+			</a>
+		</li>
+
+		<li>
+			<a href="https://www.facebook.com/matthias.geslin" target="_blank" title="Facebook">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+		</li>
+
+		<li>
+			<a href="https://github.com/Matthias-Geslin" target="_blank" title="Github">
+				<i class="fab fa-github-alt"></i>
+			</a>
+		</li>
+
+		<li>
+			<a href="https://www.linkedin.com/in/matthias-geslin/" target="_blank" title="Linkedin">
+				<i class="fab fa-linkedin-in"></i>
+			</a>
+		</li>
+
+		<li>
+			<a href="mailto:m.geslin974@gmail.com" target="_blank" title="Contact">
+				<i class="far fa-envelope"></i>
+			</a>
+		</li>
+	</ul>
 </footer>
 
 <script src="js/ajax.js"></script>
