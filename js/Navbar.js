@@ -1,13 +1,13 @@
 'use strict';
 
-var NavBar = function () {
+var Navbar = function () {
     this.navSelector();
     this.homeInSelector();
     this.portfolioInSelector();
     this.contactInSelector();
 };
 
-NavBar.prototype.navSelector = function () {
+Navbar.prototype.navSelector = function () {
     const homeSelector = document.getElementById("home");
     const homeBoxSelector = document.getElementById("home-box");
 
