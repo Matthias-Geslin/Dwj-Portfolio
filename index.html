@@ -40,25 +40,25 @@
 </header>
 
 <!-- Main -->
-<section>
+<main>
 	<div id="home-box" class="home-box disabled">
 		<h1>Welcome to my place, I'm a Web developper junior to become.</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			Quid ergo? Sic enim censent, oportunitatis esse beate vivere.
-			Hic nihil fuit, quod quaereremus. Torquatus, is qui consul cum Cn.
-		</p>
 
-		<p>Verum hoc idem saepe faciamus.
-			Is es profecto tu. Duo Reges: constructio interrete.
-			Quid me istud rogas? Hoc non est positum in nostra actione.
-			Nescio quo modo praetervolavit oratio.
-		</p>
+		<figure>
+			<img src="img/Web%20Design_528px.png" alt="logo">
+			<figcaption>
+				<p>
+					A website made with theses three web languages:
+				</p>
+			</figcaption>
+		</figure>
+
 		<ul>
-			<li><i class="fab fa-html5"></i></li>
-			<li><i class="fab fa-css3-alt"></i></li>
-			<li><i class="fab fa-js-square"></i></li>
+			<li><i class="fab fa-html5"></i><span class="html5"></span></li>
+			<li><i class="fab fa-css3-alt"></i><span class="css3"></span></li>
+			<li><i class="fab fa-js-square"></i><span class="js"></span></li>
 		</ul>
-		<img src="img/Web%20Design_528px.png" alt="">
+
 	</div>
 
 	<div id="portfolio-box" class="portfolio-box disabled">
@@ -126,19 +126,30 @@
 					<h1>Places rich of knowledge:</h1>
 					<ul>
 						<li>
+							<figure>
+								<a href="https://animadio.org/"><img src="https://animadio.org/img/slider/logo.png" alt="Animadio Logo"></a>
+								<figcaption>Animadio</figcaption>
+							</figure>
 
-							<a href="https://animadio.org/"><img src="https://animadio.org/img/slider/logo.png" alt="">Animadio</a>
 						</li>
-						<li>
 
-							<a href="https://developer.mozilla.org/fr/"><img src="img/mdn.png" alt="">Mdn</a>
-						</li>
 						<li>
-							<a href="https://codepen.io/"><i class="fab fa-codepen"></i>Codepen</a>
+							<figure>
+								<a href="https://developer.mozilla.org/fr/"><img src="img/mdn.png" alt="Mdn logo"></a>
+								<figcaption>Mdn</figcaption>
+							</figure>
+						</li>
+
+						<li>
+							<figure>
+								<a href="https://codepen.io/"><i class="fab fa-codepen"></i></a>
+								<figcaption>Codepen</figcaption>
+							</figure>
 						</li>
 					</ul>
 				</section>
 			</li>
+
 			<li>
 				<section>
 					<h1>About my code online:</h1>
@@ -159,7 +170,7 @@
 			</li>
 		</ul>
 	</div>
-</section>
+</main>
 
 
 
@@ -200,7 +211,7 @@
 
 <script src="js/ajax.js"></script>
 <script src="js/Slider.js"></script>
-<script src="js/NavBar.js"></script>
+<script src="js/Navbar.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
