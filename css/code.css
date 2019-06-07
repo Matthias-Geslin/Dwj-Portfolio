@@ -3,7 +3,7 @@
     src: url("../fonts/Aluria.ttf") format("truetype"),
     url("../fonts/Aluria.otf") format("opentype");
 }
-
+/*///////////*/
 /* Keyframes */
 @keyframes fade {
     from {opacity: .4}
@@ -14,6 +14,35 @@
     from {opacity: .4}
     to {opacity: 1}
 }
+
+@keyframes html5 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes css3 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes js {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+
 
 body {
     margin: 0;
@@ -143,9 +172,81 @@ h1{
     text-align: center;
     font-size: 1.5em;
 }
+/*~~~~~~~~~~*/
 /* home box */
-.home-box img{
-    width: 50px;
+.home-box img {
+    width: 35%;
+    max-width: 35%;
+}
+
+.home-box figure {
+    display: flex;
+    justify-content: center;
+}
+.home-box figcaption {
+    align-self: center;
+}
+.home-box .fab {
+    font-size: 25px;
+}
+.home-box ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.home-box ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-html5{
+    color: #EF652A;
+}
+
+.fa-css3-alt{
+    color: #439bd6;
+}
+
+.fa-js-square{
+    color: #f7df1e;
+}
+
+
+.home-box ul > li {
+    margin: 30px 0 40px 0;
+    height: 1px;
+    border-radius: 3px;
+    list-style: none;
+}
+
+.home-box ul > li i {
+    position: relative;
+    top: -25px;
+}
+
+.home-box ul > li span {
+    height: 3px;
+    margin: 2px 0;
+
+    position: absolute;
+    box-shadow: 0 0 5px 1px rgba(114, 39, 251, 0.4);
+}
+.html5 {
+    background: #EF652A;
+    width: 70%;
+    animation: html5 2s ease-out;
+}
+.css3 {
+    background: #439bd6;
+    width: 90%;
+    animation: css3 2s ease-out;
+}
+.js {
+    background: #f7df1e;
+    width: 50%;
+    animation: js 2s ease-out;
 }
 
 
@@ -160,12 +261,13 @@ h1{
 .picture {
     display: none;
 }
-.portfolio-box figure {
-    height: 320px;
-    padding: 10px;
-
+.portfolio-box figure, .home-box figure{
     border-radius: 5px;
     border: 3px solid grey;
+}
+.portfolio-box figure{
+    height: 320px;
+    padding: 10px;
 }
 figcaption{
     text-align: center;
@@ -224,19 +326,49 @@ figcaption{
 
 /*~~~~~~~~~~~~~*/
 /* about box */
-.about-box{
+.about-box {
     display: flex;
     justify-content: center;
     margin:auto;
 }
-.about-box img {
-    width: 100px;
+
+.about-box ul {
+    list-style: none;
 }
 
-div{}
+.about-box img {
+    max-width: 75px;
+    max-height: 75px;
+}
+
+.about-box section ul {
+    padding:0;
+}
+
+.about-box figure {
+    display: flex;
+}
+
+.about-box section ul li figcaption {
+    align-self: center;
+}
 
 
-footer ul{
+.about-box section ul figure {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    align-content: center;
+}
+
+.about-box section ul figure a {
+    align-self: center;
+}
+
+
+/* footer */
+footer ul {
     width: 100%;
     justify-content: center;
     margin: auto;
@@ -249,16 +381,14 @@ footer ul{
 
 /*/////////*/
 /* helpers */
-.disabled{
+.disabled {
     display: none;
 }
 
 /*/////////////////////*/
 /* media screen mobile */
 @media screen and (min-width: 479px) {
-    .far, .fab{
-        padding: 15px;
-    }
+
 }
 /* media screen tablet */
 @media screen and (min-width: 959px) {
