@@ -20,25 +20,25 @@ Navbar.prototype.navSelector = function () {
 
     this.homeInSelector = function () {
         homeSelector.addEventListener('click', function (e) {
-            homeBoxSelector.classList.remove('disabled');
-            portfolioBoxSelector.classList.add('disabled');
-            aboutBoxSelector.classList.add('disabled');
+            homeBoxSelector.classList.remove('hide');
+            portfolioBoxSelector.classList.add('hide');
+            aboutBoxSelector.classList.add('hide');
         });
     };
 
     this.portfolioInSelector = function () {
         portfolioSelector.addEventListener('click', function () {
-            homeBoxSelector.classList.add('disabled');
-            portfolioBoxSelector.classList.remove('disabled');
-            aboutBoxSelector.classList.add('disabled');
+            homeBoxSelector.classList.add('hide');
+            portfolioBoxSelector.classList.remove('hide');
+            aboutBoxSelector.classList.add('hide');
         });
     };
 
     this.contactInSelector = function () {
         aboutSelector.addEventListener('click', function () {
-            homeBoxSelector.classList.add('disabled');
-            portfolioBoxSelector.classList.add('disabled');
-            aboutBoxSelector.classList.remove('disabled');
+            homeBoxSelector.classList.add('hide');
+            portfolioBoxSelector.classList.add('hide');
+            aboutBoxSelector.classList.remove('hide');
         });
     };
 };
