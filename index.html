@@ -12,7 +12,7 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/normalize.css" type="text/css">
-	<link rel="stylesheet" href="css/code.css" type="text/css">
+	<link rel="stylesheet" href="scss/code.css" type="text/css">
 </head>
 
 <body>
@@ -41,7 +41,7 @@
 
 <!-- Main -->
 <main>
-	<div id="home-box" class="home-box disabled">
+	<div id="home-box" class="home-box hide">
 		<h1>Welcome to my place, I'm a Web developper junior to become.</h1>
 
 		<figure>
@@ -61,7 +61,7 @@
 
 	</div>
 
-	<div id="portfolio-box" class="portfolio-box disabled">
+	<div id="portfolio-box" class="portfolio-box hide">
 		<figure class="picture fade">
 			<img src="img/thumbs/webagency.png" alt="Screenshot du premier projet">
 			<figcaption>
@@ -89,30 +89,31 @@
 			</figcaption>
 		</figure>
 
-		<div class="controls">
-			<input type="button"  id="previous" class="disabled">
-			<label for="previous"  class="prev" onclick="Slider.prototype.moveInSlide(slideIndex -=1)">
+		<!--    Controls    -->
+		<div class="controls flex">
+			<input type="button"  id="prev" value="">
+			<label for="prev"  class="prev" id="prev-lb">
 				<img src="img/svg/hand-point-left.svg" class="prev-mvt" alt="Svg image">
 			</label>
 
-			<input type="button" id="play-btn" class="disabled">
+			<input type="button" id="play-btn">
 			<label for="play-btn" id="play" class="play">
 				<img src="img/svg/play.svg" class="play-mvt" alt="Svg image">
 			</label>
 
-			<input type="button" id="pause-btn" class="disabled">
-			<label for="pause-btn" id="pause" class="pause disabled">
+			<input type="button" id="pause-btn">
+			<label for="pause-btn" id="pause" class="pause hide">
 				<img src="img/svg/pause-circle.svg" class="pause-mvt" alt="Svg image">
 			</label>
 
-			<input type="button" id="next" class="disabled">
-			<label for="next" class="next" onclick="Slider.prototype.moveInSlide(slideIndex +=1)">
+			<input type="button" id="next">
+			<label for="next" class="next" id="next-lb">
 				<img src="img/svg/hand-point-right.svg" class="next-mvt" alt="Svg image">
 			</label>
 		</div>
 	</div>
 
-	<div id="about-box" class="about-box disabled">
+	<div id="about-box" class="about-box hide">
 		<ul>
 			<li>
 				<figure>
@@ -176,7 +177,7 @@
 
 <!-- Footer -->
 <footer id="footer">
-	<ul class="social">
+	<ul>
 		<li>
 			<a href="https://twitter.com/Matthiasgeslin" target="_blank" title="Twitter">
 				<i class="fab fa-twitter"></i>
